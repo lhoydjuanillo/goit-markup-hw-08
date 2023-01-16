@@ -1,0 +1,44 @@
+@use '../utils/vars';
+
+.customer__list {
+    display: flex;
+}
+
+.customer__item {
+    color: rgba(175, 177, 184, 1);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+
+    &:hover,
+    &:focus {
+        border: 1px solid 
+        rgba(33, 150, 243, 1);        
+    }
+}
+
+.customer__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customer__link {
+    width: 106px;
+    height: 60px;
+    background-color: vars.$white-background-color;
+    color: #AFB1B8;
+    display: flex;
+    align-items: center;
+}
+
+.customer__icon {
+    fill: currentColor;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: color vars.$time vars.$time-function;
+
+    &:hover,
+    &:focus {
+        color: vars.$logo-color;
+    }
+}
+

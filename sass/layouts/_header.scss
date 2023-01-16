@@ -1,0 +1,113 @@
+@use '../utils/vars.scss';
+
+// INDEX HEADER
+
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.container__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.contact__list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav__items:not(:last-child) {
+    margin-right: 70px;
+}
+
+.header__logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    /* line-weight always in cal (line/fontsize) */
+    letter-spacing: 0.03em;
+    color: vars.$logo-color;
+    margin-right: 97px;
+}
+
+.nav__links {
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: vars.$black-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    transition: color vars.$time vars.$time-function;
+
+    &:hover,
+    &:focus {
+        color: vars.$logo-color;
+    }
+}
+
+.studio__links--current{
+    color: vars.$logo-color;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display:block;
+        width: 48px;
+        height: 4px;
+        top: 76px;
+        background-color: vars.$logo-color;
+        border-radius: 2px;     
+    }
+}
+
+.contact__links {   
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: vars.$gray-font-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    transition: color vars.$time vars.$time-function;
+
+    &:hover,
+    &:focus {
+        color: vars.$logo-color;
+    }
+}
+
+
+// PORTFOLIO HEADER
+
+.portfolio__links--current {
+    color: vars.$logo-color;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 4px;
+        top: 76px;
+        background-color: vars.$logo-color;
+        border-radius: 2px;
+    }
+}
+
+.contacts__icon--svg {
+    margin-right: 10px;
+    fill: currentColor;
+}

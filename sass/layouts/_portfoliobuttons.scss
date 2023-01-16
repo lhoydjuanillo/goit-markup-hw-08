@@ -1,0 +1,55 @@
+@use '../utils/vars';
+
+.portfolio__links--current::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 4px;
+    top: 76px;
+    background: vars.$logo-color;
+    border-radius: 2px; 
+}
+
+.portfolio__list {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__items:not(:last-child) {
+    margin-right: 8px;   
+}
+
+.portfolio__buttons {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border: none;
+    color: vars.$black-color;
+    background-color: vars.$light-background-color;
+    height: 38px;
+    padding: 6px 26px;
+    border-radius: 4px;
+    transition: color vars.$time vars.$time-function, 
+    background-color vars.$time vars.$time-function;
+
+    &:hover,
+    &:focus {
+        color: vars.$footer-font-color;
+        background-color: vars.$logo-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+    }
+}
+
+.portfolio__buttons--current {
+    color: vars.$footer-font-color;
+    background-color: vars.$logo-color;
+}

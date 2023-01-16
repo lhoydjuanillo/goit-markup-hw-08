@@ -1,0 +1,25 @@
+@use '../utils/vars';
+
+%section-titles {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: vars.$black-color;
+    margin-bottom: 50px;
+}
+
+.whatwedo__section--title {
+    @extend %section-titles;
+}
+
+.ourteam__section--title {
+    @extend %section-titles;
+}
+
+.costumer__section--title {
+    @extend %section-titles;
+}

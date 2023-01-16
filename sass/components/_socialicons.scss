@@ -1,0 +1,42 @@
+@use '../utils/vars';
+
+%social-icons {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.ourteam__icon--link {
+    @extend %social-icons;
+    background-color: vars.$white-background-color;
+    color: #AFB1B8;
+    transition: color vars.$time vars.$time-function, 
+    background-color vars.$time vars.$time-function;
+
+    &:hover,
+    &:focus {
+        background-color: vars.$logo-color;
+        color: vars.$white-font-color;
+    }
+}
+
+.findus__icon--link {
+    @extend %social-icons;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: vars.$white-font-color;
+    transition: color vars.$time vars.$time-function, 
+    background-color vars.$time vars.$time-function;
+
+    &:hover,
+    &:focus {
+        color: vars.$light-background-color;
+        background-color: vars.$logo-color;
+    }
+}
+
+.link__icon {
+    fill:currentColor;
+}

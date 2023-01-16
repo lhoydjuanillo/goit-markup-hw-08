@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container container__header">
+            <a class="header__logo" href="./index.html">WebStudio</a>
+                <nav class="nav__header">
+                    <ul class="nav__list">
+                        <li class="nav__items">
+                            <a class="nav__links" href="./index.html">Studio</a>
+                        </li>
+                        <li class="nav__items">
+                            <a class="nav__links portfolio__links--current" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav__items">
+                            <a class="nav__links" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                 
+            <ul class="contact__list">
+                <li class="contact__item">
+                    <a class="contact__links" href="mailto:info@devstudio.com">
+                        <svg class="contacts__icon--svg" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact__links" href="tel:+380961111111">
+                        <svg class="contacts__icon--svg" width="16" height="16">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section>
+        <div class="container">   
+        <ul class="portfolio__list">
+            <li class="portfolio__items">
+                <button class="portfolio__buttons portfolio__buttons--current" type="button">All</button>
+            </li>
+            <li class="portfolio__items">
+            <button class="portfolio__buttons" type="button">Web-sites</button>
+             </li>
+            <li class="portfolio__items">
+                <button class="portfolio__buttons" type="button">Apps</button>
+            </li>
+             <li class="portfolio__items">   
+                <button class="portfolio__buttons" type="button">Design</button>
+            </li>
+            <li class="portfolio__items">
+                <button class="portfolio__buttons" type="button">Marketing</button>
+            </li>
+        </ul>
+        
+        <ul class="portfolio__image--list">
+            <li class="portfolio__image--item">
+                <div class="portfolio__image"> 
+                    <img src="./images/portfolio-laptop-screen.jpg" alt="laptop with three people" width="370" height="294">
+                    <div class="portfolio__overlay"> 
+                        <p class="overlay__text"> 
+                            Technoduck is a state-of-the-art
+                            coronavirus distribution platform. 
+                            Companies use this platform for 
+                            digital espionage and attacks on 
+                            competitors' secure servers.
+                        </p> 
+                    </div> 
+                </div> 
+                <div class="portfolio__description">
+                    <h3 class="portfolio__titles">Technoduck</h3>
+                    <p class="portfolio__titles--about">Web-site</p>
+                </div>
+            </li>             
+            <li class="portfolio__image--item">
+                <div class="portfolio__image">
+                    <img src="./images/portfolio-curry.jpg" alt="nba player blocked" width="370" height="294">
+                    <div class="portfolio__overlay"> 
+                        <p class="overlay__text"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Rerum saepe, esse aliquam sit, quis alias nostrum quae 
+                            laudantium dolorem ratione blanditiis dolor explicabo, 
+                            doloribus cum?
+                    
+                        </p> 
+                    </div> 
+                </div>
+                <div class="portfolio__description">
+                    <h3 class="portfolio__titles">Poster New Orlean vs Golden Star</h3>
+                    <p class="portfolio__titles--about">Design</p>
+                </div>
+            </li>                
+            <li class="portfolio__image--item">
+                <div class="portfolio__image">
+                <img src="./images/portfolio-seafood.jpg" alt="the Seafood Restaurant Logo" width="370" height="294">
+                <div class="portfolio__overlay"> 
+                        <p class="overlay__text"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Rerum saepe, esse aliquam sit, quis alias nostrum quae 
+                            laudantium dolorem ratione blanditiis dolor explicabo, 
+                            doloribus cum?
+                    
+                        </p> 
+                    </div> 
+                </div>
+
+                <div class="portfolio__description">
+                    <h3 class="portfolio__titles">Seafood Restaurant</h3>
+                    <p class="portfolio__titles--about">Apps</p>
+                </div>
+            </li>               
+            <li class="portfolio__image--item">
+                <div class="portfolio__image">
+                <img src="./images/portfolio-headset.jpg" alt="headset" width="370" height="294">
+                <div class="portfolio__overlay"> 
+                        <p class="overlay__text"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Rerum saepe, esse aliquam sit, quis alias nostrum quae 
+                            laudantium dolorem ratione blanditiis dolor explicabo, 
+                            doloribus cum?
+                    
+                        </p> 
+                    </div> 
+                </div>
+
+                <div class="portfolio__description">
+                    <h3 class="portfolio__titles">Project Prime</h3>
+                    <p class="portfolio__titles--about">Marketing</p>
+                </div>
+            </li>
+            <li class="portfolio__image--item">
+                <div class="portfolio__image">
+                <img src="./images/portfolio-boxes.jpg" alt="two boxes" width="370" height="294">
+                <div class="portfolio__overlay"> 
+                        <p class="overlay__text"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Rerum saepe, esse aliquam sit, quis alias nostrum quae 
+                            laudantium dolorem ratione blanditiis dolor explicabo, 
+                            doloribus cum?
+                    
+                        </p> 
+                    </div> 
+                </div>
+
+                <div class="portfolio__description">
+                    <h3 class="portfolio__titles">Project Boxes</h3>
+                    <p class="portfolio__titles--about">Apps</p>
+                </div>
+            </li>
+            <li class="portfolio__image--item">
+                <div class="portfolio__image">
+                <img src="./images/portfolio-monitor.jpg" alt="laptop monitor" width="370" height="294">
+                <div class="portfolio__overlay"> 
+                        <p class="overlay__text"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Rerum saepe, esse aliquam sit, quis alias nostrum quae 
+                            laudantium dolorem ratione blanditiis dolor explicabo, 
+                            doloribus cum?
+                    
+                        </p> 
+                    </div> 
+                </div>
+
+                <div class="portfolio__description">
+                    <h3 class="portfolio__titles">Inspiration has no Borders</h3>
+                    <p class="portfolio__titles--about">Web-site</p>
+                </div>
+            </li>
+            <li class="portfolio__image--item">
+                <div class="portfolio__image">
+                <img src="./images/portfolio-book.jpg" alt="limited edition book" width="370" height="294">
+                <div class="portfolio__overlay"> 
+                        <p class="overlay__text"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Rerum saepe, esse aliquam sit, quis alias nostrum quae 
+                            laudantium dolorem ratione blanditiis dolor explicabo, 
+                            doloribus cum?
+                    
+                        </p> 
+                    </div> 
+                </div>
+
+                <div class="portfolio__description">
+                    <h3 class="portfolio__titles">Limited Edition</h3>
+                    <p class="portfolio__titles--about">Design</p>
+                </div>
+            </li>
+            <li class="portfolio__image--item">
+                <div class="portfolio__image">
+                <img src="./images/portfolio-tag.jpg" alt="label tag" width="370" height="294">
+                <div class="portfolio__overlay"> 
+                        <p class="overlay__text"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Rerum saepe, esse aliquam sit, quis alias nostrum quae 
+                            laudantium dolorem ratione blanditiis dolor explicabo, 
+                            doloribus cum?
+                    
+                        </p> 
+                    </div> 
+                </div>
+                <div class="portfolio__description">
+                    <h3 class="portfolio__titles">Project LAB</h3>
+                    <p class="portfolio__titles--about">Marketing</p>
+                </div>
+            </li>
+            <li class="portfolio__image--item">
+                <div class="portfolio__image">
+                <img src="./images/portfolio-laptop.jpg" alt="typing at laptop" width="370" height="294">
+                <div class="portfolio__overlay"> 
+                        <p class="overlay__text"> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Rerum saepe, esse aliquam sit, quis alias nostrum quae 
+                            laudantium dolorem ratione blanditiis dolor explicabo, 
+                            doloribus cum?
+                    
+                        </p> 
+                    </div> 
+                </div>
+
+                <div class="portfolio__description">
+                    <h3 class="portfolio__titles">Growing Business</h3>
+                    <p class="portfolio__titles--about">Apps</p>
+                </div>
+            </li>              
+        </ul>
+        </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container__footer">
+        <div class="studio__address">
+            <a class="footer__logo" href="./index.html">WebStudio</a>
+            <address class="address__links">
+            <ul class="address__items">
+                <li class="footer__items">
+                    <a class="footer__address" href="https://goo.gl/maps/azHBCuRWSZb8a7Sr6">695 Park Ave, New York, NY 10065, <br> United States</a>
+                </li>
+                <li class="footer__items">
+                    <a class="footer__links" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="footer__items">
+                    <a class="footer__links" href="tel:+12127724150">+1 212-772-4150</a>
+                </li>
+            </ul>
+            </address>
+        </div>
+
+        <div class="findus__icons">
+            <h3 class="findus__title">Find us on</h3>
+                <ul class="findus__icon--list">
+                    <li class="findus__icon--item">
+                        <a href="#" class="findus__icon--link">
+                            <svg class="link__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>                                    
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="findus__icon--item">
+                        <a href="#" class="findus__icon--link">
+                            <svg class="link__icon" width="20" height="17">
+                                <use href="./images/sprite.svg#icon-twitter"></use>                                    
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="findus__icon--item">
+                        <a href="#" class="findus__icon--link">
+                            <svg class="link__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>                                    
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="findus__icon--item">
+                        <a href="#" class="findus__icon--link">
+                            <svg class="link__icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>                                    
+                            </svg>
+                        </a>
+                    </li>
+                </ul>    
+        </div>
+        <div class="subscribe">
+            <h3 class="subscribe__title">Subscribe to the news letter</h3>
+            <!-- <div class="footer-form"> -->
+                <form action="#">
+                    <div class="subscribe__form">
+                        <input class="subscribe__input" type="text" placeholder="E-mail" name="email">
+                            <button class="subscribe__button">Subscribe
+                                <svg class="subscribe__icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

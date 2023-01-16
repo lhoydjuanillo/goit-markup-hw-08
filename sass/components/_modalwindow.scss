@@ -1,0 +1,177 @@
+@use '../utils/vars';
+
+.form__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.form__field {
+    margin-bottom: 10px;
+}
+
+.form__label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color: vars.$gray-font-color;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.form__inputs {
+    position:relative;
+    display: block;
+}
+
+.input__items {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    background-color: vars.$white-background-color;
+    width: 448px;
+    height: 40px;
+    padding-left: 40px;
+    cursor: pointer;
+    transition: border-color vars.$time vars.$time-function,
+    color vars.$time vars.$time-function;
+
+    &:focus {
+        border-color: vars.$logo-color;
+        color: vars.$logo-color;
+        outline: none;
+    }
+}
+
+.form__icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill vars.$time vars.$time-function;
+}
+
+.input__items:focus ~ .form__icon {
+    fill: vars.$logo-color;
+}
+
+.form__icon {
+    fill: currentColor;
+}
+
+.comments {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    background-color: vars.$white-background-color;
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    resize: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color:vars.$gray-font-color;
+    cursor: pointer;
+    transition: border-color vars.$time vars.$time-function,
+    color vars.$time vars.$time-function;
+
+    &:focus {
+        border-color: vars.$logo-color;
+        color: vars.$logo-color;
+        outline: none;
+    }
+}
+
+.checkbox__item {
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   padding: 0;
+   border: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+.check__label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: vars.$gray-font-color;
+    display: flex;
+    cursor: pointer;
+    margin-left: 13px;
+    transition: border vars.$time vars.$time-function;
+}
+
+.checkbox__input {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #212121;
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox__item:checked + .check__label >
+.checkbox__input {
+    background-color: vars.$logo-color;
+    border: none;
+}
+
+.form__button {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-left: 130px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 80px;
+    color: vars.$white-font-color;
+    background-color: vars.$logo-color;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 
+    rgba(0, 0, 0, 0.15);
+    transition: color vars.$time vars.$time-function, 
+    background-color vars.$time vars.$time-function;
+
+    &:hover,
+    &:focus {
+        color: vars.$logo-color;
+        background-color: vars.$white-background-color;
+    }
+}

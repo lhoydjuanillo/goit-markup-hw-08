@@ -1,0 +1,58 @@
+@use '../utils/vars.scss';
+
+.hero__section {
+    background-color: vars.$dark-background-color;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-image: 
+            linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/hero-background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__title {
+    line-height: calc(60/44);
+    font-size: 44px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: vars.$white-font-color;
+    margin-bottom: 30px;
+}
+
+.request__button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: vars.$white-font-color;
+    background-color: vars.$logo-color;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: color vars.$time vars.$time-function, 
+    background-color vars.$time vars.$time-function;
+
+    &:hover,
+    &:focus {
+        color: vars.$logo-color;
+        background-color: vars.$white-background-color;
+    }
+}

@@ -1,0 +1,57 @@
+@use '../utils/vars';
+
+.features__list {
+    display: flex;
+}
+
+.features__item {
+    width: 270px;
+}
+
+.features__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.features__section--descript {
+    margin-top: 9px;
+}
+
+.features__section--subtitles {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: vars.$black-color;
+}
+
+.features__section--descript {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: vars.$gray-font-color;
+}
+
+.features__icon--list {
+    display: flex;
+}
+
+.features__icon--item {
+    width: 270px;
+    height: 120px;
+    background-color: vars.$light-background-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features__icon--item:not(:last-child) {
+    margin-right: 30px;
+}

@@ -1,0 +1,24 @@
+$logo-color: #2196F3;
+$black-color: #212121;
+$gray-font-color: #757575;
+$footer-font-color: #FFFFFF;
+$light-background-color: #F5F4FA;
+$dark-background-color: #2F303A;
+$white-font-color: #FFFFFF;
+$white-background-color: #FFFFFF;
+
+$time: 250ms;
+$time-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+.visually__hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

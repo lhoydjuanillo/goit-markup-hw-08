@@ -1,0 +1,54 @@
+@use '../utils/vars';
+
+.footer {
+    background-color: vars.$dark-background-color;
+    padding: 60px 0;
+}
+
+.container__footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.studio__address {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.footer__logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    color: vars.$logo-color;
+    margin-bottom: 9px;
+    display: block;
+}
+
+.footer__address {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: vars.$footer-font-color;
+}
+
+.footer__items {
+    margin-bottom: 2px;
+}
+.address__links{
+    font-style: normal;
+}
+
+.footer__links {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}

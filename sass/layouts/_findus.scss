@@ -1,0 +1,28 @@
+@use '../utils/vars';
+
+.findus__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: vars.$white-font-color;
+    margin-bottom: 20px;
+}
+
+.findus__icons {
+    display: flex;
+    flex-direction: column;
+    margin-right: 93px;
+}
+
+.findus__icon--list {
+    display: flex;
+    justify-content: center;
+}
+
+.findus__icon--item:not(:last-child) {
+    margin-right: 10px;
+}
