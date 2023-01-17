@@ -1,8 +1,23 @@
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .visually__hidden {
@@ -159,6 +174,24 @@ section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 480px) {
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .hero__section {
   background-color: #2F303A;
@@ -227,7 +260,7 @@ section {
 }
 
 .features__item {
-  width: 270px;
+  max-width: 270px;
 }
 
 .features__item:not(:last-child) {
@@ -264,18 +297,10 @@ section {
 }
 
 .features__icon--item {
-  width: 270px;
-  height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.features__icon--item:not(:last-child) {
-  margin-right: 30px;
+  padding: 25px 102px;
 }
 
 .whatwedo__list {

@@ -5,7 +5,7 @@
 }
 
 .features__item {
-    width: 270px;
+    max-width: 270px;
 }
 
 .features__item:not(:last-child) {
@@ -42,16 +42,9 @@
 }
 
 .features__icon--item {
-    width: 270px;
-    height: 120px;
     background-color: vars.$light-background-color;
     border-radius: 4px;
     margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 25px 102px;
 }
 
-.features__icon--item:not(:last-child) {
-    margin-right: 30px;
-}
