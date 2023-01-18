@@ -10,6 +10,13 @@
     letter-spacing: 0.03em;
     margin-top: 2px;
     margin-bottom: 12px;
+
+    @media screen and (max-width:480px) {
+        & {    
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+    }
 }
 
 .form {
@@ -19,6 +26,8 @@
     align-items: flex-start;
     margin-right: 40px;
     margin-left: 40px;
+
+    
 }
 
 .form__field {
@@ -63,6 +72,11 @@
         color: vars.$logo-color;
         outline: none;
     }
+
+    @media screen and (max-width: 480px) {
+        width: 370px;
+        height: 40px;
+    }
 }
 
 .form__icon {
@@ -105,6 +119,11 @@
         border-color: vars.$logo-color;
         color: vars.$logo-color;
         outline: none;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 370px;
+        height: 40px;
     }
 }
 
@@ -173,5 +192,10 @@
     &:focus {
         color: vars.$logo-color;
         background-color: vars.$white-background-color;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-left: 90px;
+
     }
 }

@@ -14,6 +14,13 @@
 
 .whatwedo__section--title {
     @extend %section-titles;
+
+    @media screen and (max-width: 468px) {
+        dipslay: none;
+    }
+    @media screen and (max-width: 1199px) {
+        display: none;
+}
 }
 
 .ourteam__section--title {

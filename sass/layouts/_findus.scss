@@ -10,17 +10,59 @@
     text-transform: uppercase;
     color: vars.$white-font-color;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        & {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 48px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
 
 .findus__icons {
     display: flex;
     flex-direction: column;
     margin-right: 93px;
+
+    @media screen and (min-width: 480px) {
+        & { 
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+    }
 }
 
 .findus__icon--list {
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        & {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
 
 .findus__icon--item:not(:last-child) {

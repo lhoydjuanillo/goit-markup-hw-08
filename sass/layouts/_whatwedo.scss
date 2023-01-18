@@ -3,6 +3,13 @@
 .whatwedo__list {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 468px) {
+        dipslay: none;
+    }
+    @media screen and (max-width: 1199px) {
+        display: none;
+}
 }
 
 .whatwedo__items {

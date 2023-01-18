@@ -10,23 +10,51 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (min-width: 480px) {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
 }
 
 .nav__list {
     display: flex;
+
+    @media screen and (max-width: 768px) {  
+        display: none;
+   }
 }
 
 .contact__list {
     display: flex;
     margin-left: auto;
+
+    @media screen and (max-width: 768px) {  
+        margin-left: auto;
+   }
+}
+
+.contact__item {
+    @media screen and (max-width: 768px) {  
+        display: none;
+   }
 }
 
 .contact__item:not(:last-child) {
     margin-right: 50px;
+
+    
 }
 
 .nav__items:not(:last-child) {
     margin-right: 70px;
+
+    @media screen and (max-width: 1199px) {
+        & {
+            margin-right:40px;
+        }
+    }
 }
 
 .header__logo {
@@ -86,6 +114,19 @@ header {
     &:hover,
     &:focus {
         color: vars.$logo-color;
+    }
+
+    @media screen and (max-width:768px) {
+        & {
+        margin-left: auto;
+        }
+
+        &:not(:last-child) {
+            padding-top: 0px;
+            padding-bottom:0px;
+            margin-bottom:15px;
+            font-size: 12px;
+        }
     }
 }
 

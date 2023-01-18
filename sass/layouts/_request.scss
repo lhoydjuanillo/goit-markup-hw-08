@@ -30,6 +30,13 @@
     text-transform: uppercase;
     color: vars.$white-font-color;
     margin-bottom: 30px;
+
+    @media screen and (max-width:480px) {
+
+        & {
+            font-size: 26px;   
+          }
+    }
 }
 
 .request__button {

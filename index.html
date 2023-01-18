@@ -47,8 +47,66 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="mobile__btn--open js-open-menu">
+                <svg class="menu__icon" width="24" height="16">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+
         </div>
     </header>
+
+    <div class="menu__container js-menu-container">
+            <button type="button" class="mobile__btn--close js-close-menu">
+                <svg class="menu__icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-Vector"></use>
+                </svg>
+            </button>
+
+            <div class="mobile__nav">
+                <ul class="mobile__menu">
+                    <li class="mobile__menu--item">
+                        <a href= "./index.html" class="mobile__link--current mobile__menu--link">Studio</a>
+                    </li>
+                    <li class="mobile__menu--item">
+                        <a href= "./portfolio.html" class="mobile__menu--link">Portfolio</a>
+                    </li>
+                    <li class="mobile__menu--item">
+                        <a href= "./index.html" class="mobile__menu--link">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="mobile__contact">
+                <li class="mobile__contact--item">
+                    <a class="contact__item--num contact__item--current" href="tel:+380961111111">
+                        +38 096 111 11 11</a>
+                </li>
+                <li class="mobile__contact--item">
+                    <a class="contact__item--mail" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="mobile__footer">
+                <li class="mobile__footer--items">
+                    <a href="Instagram.com" class="mobile__items--icon">Instagram </a>
+                </li>
+                <li class="mobile__footer--items">
+                    <a href="Twitter.com" class="mobile__items--icon">Twitter</a>
+                </li>
+                <li class="mobile__footer--items">
+                    <a href="Facebook.com" class="mobile__items--icon">Facebook</a>
+                </li>
+                <li class="mobile__footer--items">
+                    <a href="LinkedIn.com" class="mobile__items--icon">LinkedIn</a>
+                </li>
+            </ul>
+
+
+
+        
+    </div>
 
     <!-- MAIN SECTION -->
     <main>
@@ -474,5 +532,6 @@
 
     <!-- JAVASCRIPT -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
