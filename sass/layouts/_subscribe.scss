@@ -11,7 +11,7 @@
     margin-bottom: 20px;
     color: vars.$footer-font-color;
 
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (min-width: 375px) and (max-width: 1199px) {
         & {
             display: flex;
             align-items: center;
@@ -31,7 +31,7 @@
 .subscribe__form {
     
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 375px) and (max-width: 767px) {
         & {
             display: flex;
             flex-direction: column;
@@ -69,13 +69,13 @@
         outline: none;
     }
 
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (min-width: 375px) and (max-width: 1199px) {
         & {
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 20px;
-            width: 450px;
+            width: 375px;
         }
     }
 

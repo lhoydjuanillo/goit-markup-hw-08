@@ -13,7 +13,7 @@
     background-position: center;
     background-size: cover;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 375px) {
         padding-top: 118px;
         padding-bottom: 118px;
     }
@@ -36,7 +36,7 @@
     color: vars.$white-font-color;
     margin-bottom: 30px;
 
-    @media screen and (min-width:480px) and (max-width: 1199px) {
+    @media screen and (min-width:375px) and (max-width: 1199px) {
         & {
             font-size: 26px;   
           }

@@ -11,7 +11,7 @@
     color: vars.$white-font-color;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (min-width: 375px) and (max-width: 1199px) {
         & {
             display: flex;
             align-items: center;
@@ -32,14 +32,18 @@
 .findus__icons {
     display: flex;
     flex-direction: column;
-    margin-right: 93px;
+    
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 375px) {
         & { 
             display: flex;
             flex-direction: column;
             margin: 0;
         }
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        
     }
 }
 
@@ -47,7 +51,7 @@
     display: flex;
     justify-content: center;
 
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @media screen and (min-width: 375px) and (max-width: 1199px) {
         & {
             display: flex;
             align-items: center;
