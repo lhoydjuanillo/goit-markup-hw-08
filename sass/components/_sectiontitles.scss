@@ -25,10 +25,18 @@
 
 .ourteam__section--title {
     @extend %section-titles;
+    
+    @media screen and (min-width: 480px) {
+        font-size: 28px;
+    }
 }
 
 .costumer__section--title {
     @extend %section-titles;
+
+    @media screen and (min-width: 480px) {
+        font-size: 28px;
+    }
 }
 
     
