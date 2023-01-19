@@ -15,9 +15,6 @@
 .whatwedo__section--title {
     @extend %section-titles;
 
-    @media screen and (min-width: 375px) {
-        dipslay: none;
-    }
     @media screen and (max-width: 1199px) {
         display: none;
 }
@@ -26,7 +23,7 @@
 .ourteam__section--title {
     @extend %section-titles;
     
-    @media screen and (min-width: 375px) {
+    @media screen and (max-width: 767px) {
         font-size: 28px;
     }
 }
@@ -34,7 +31,7 @@
 .costumer__section--title {
     @extend %section-titles;
 
-    @media screen and (min-width: 375px) {
+    @media screen and (max-width: 767px) {
         font-size: 28px;
     }
 }

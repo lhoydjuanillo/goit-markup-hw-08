@@ -4,11 +4,6 @@
   padding-right: 15px;
   margin: 0 auto;
 }
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
-}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -322,38 +317,33 @@ img {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 375px) {
-  .whatwedo__section--title {
-    dipslay: none;
-  }
-}
 @media screen and (max-width: 1199px) {
   .whatwedo__section--title {
     display: none;
   }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 767px) {
   .ourteam__section--title {
     font-size: 28px;
   }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 767px) {
   .costumer__section--title {
     font-size: 28px;
   }
 }
 
+.features__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .features__list {
   display: flex;
 }
-@media screen and (min-width: 320px) and (max-width: 374px) {
-  .features__list {
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .features__list {
     flex-direction: column;
   }
@@ -370,12 +360,6 @@ img {
 }
 .features__item:last-child {
   margin-bottom: 0px;
-}
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .features__item:not(:last-child) {
-    margin-bottom: 30px;
-    margin-right: 0;
-  }
 }
 @media screen and (min-width: 768px) {
   .features__item {
@@ -428,15 +412,11 @@ img {
   color: #757575;
 }
 
-.features__icon--list {
-  display: flex;
-}
-
 .features__icon--item {
   background-color: #F5F4FA;
   border-radius: 4px;
-  margin-bottom: 30px;
-  padding: 25px 102px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -901,7 +881,7 @@ img {
 .customer__item:hover, .customer__item:focus {
   border: 1px solid rgb(33, 150, 243);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .customer__item:nth-child(odd) {
     margin-right: 30px;
     margin-left: 30px;
