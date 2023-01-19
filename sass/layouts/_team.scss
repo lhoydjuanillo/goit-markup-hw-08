@@ -7,6 +7,11 @@
 .ourteam__list {
     display: flex;
 
+    @media screen and (min-width: 320px) and (max-width: 374px){
+        flex-wrap:wrap;
+        justify-content: center;
+     }
+
     @media screen and (min-width: 375px) and (max-width: 767px){
           flex-wrap:wrap;
           justify-content: center;

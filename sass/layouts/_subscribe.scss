@@ -31,7 +31,7 @@
 .subscribe__form {
     
 
-    @media screen and (min-width: 375px) and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
         & {
             display: flex;
             flex-direction: column;
@@ -69,6 +69,17 @@
         outline: none;
     }
 
+    @media screen and (min-width: 320px) and (max-width: 374px) {
+        & {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            width: 250px;
+            margin-left: 10px;
+        }
+    }
+
     @media screen and (min-width: 375px) and (max-width: 1199px) {
         & {
             display: flex;
@@ -79,14 +90,14 @@
         }
     }
 
-    @media screen and (max-width: 768px) {
-        &{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-    }
+    // @media screen and (max-width: 768px) {
+    //     &{
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         margin-bottom: 20px;
+    //     }
+    // }
 }
 
 .subscribe__button {

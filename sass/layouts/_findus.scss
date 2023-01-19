@@ -34,13 +34,13 @@
     flex-direction: column;
     
 
-    @media screen and (min-width: 375px) {
-        & { 
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-        }
-    }
+    // @media screen and (min-width: 320px) {
+    //     & { 
+    //         display: flex;
+    //         flex-direction: column;
+    //         margin: 0;
+    //     }
+    // }
     @media screen and (min-width: 1200px) {
         margin-right: 93px;
         
@@ -51,7 +51,7 @@
     display: flex;
     justify-content: center;
 
-    @media screen and (min-width: 375px) and (max-width: 1199px) {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
         & {
             display: flex;
             align-items: center;

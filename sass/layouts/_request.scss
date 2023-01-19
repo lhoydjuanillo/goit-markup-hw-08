@@ -36,6 +36,10 @@
     color: vars.$white-font-color;
     margin-bottom: 30px;
 
+    @media screen and (min-width: 320px) and (max-width: 374px) {
+        font-size: 18px;
+    }
+
     @media screen and (min-width:375px) and (max-width: 1199px) {
         & {
             font-size: 26px;   

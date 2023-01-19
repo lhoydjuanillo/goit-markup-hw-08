@@ -9,17 +9,17 @@
     display: flex;
     align-items: baseline;
 
-    @media screen and (min-width: 375px) and (max-width: 1199px) {
+    @media screen and (min-width: 325px) and (max-width: 1199px) {
             flex-wrap: wrap;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
             display:block;
     }
 }
 
 .studio__address {
-    @media screen and (min-width: 375px) and (max-width: 767px) {
+    @media screen and (min-width: 325px) and (max-width: 767px) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -51,6 +51,10 @@
     margin-bottom: 9px;
     display: block;
 
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         justify-content: center;
@@ -72,7 +76,7 @@
 .footer__items {
     margin-bottom: 2px;
 
-    @media screen and (min-width: 375px) and (max-width: 1199px) {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
         & {
             display: flex;
             justify-content: center;
