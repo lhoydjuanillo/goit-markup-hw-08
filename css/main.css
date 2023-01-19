@@ -1551,4 +1551,9 @@ section {
   letter-spacing: 0.02em;
   color: #2196F3;
   margin-right: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .mobile__items--icon {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */

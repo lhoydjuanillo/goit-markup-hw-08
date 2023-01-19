@@ -175,5 +175,10 @@
     color: vars.$logo-color;
     margin-right: 10px;
 
+    @media screen and (min-width:320px) and (max-width: 479px) {
+        font-size: 14px;
+        
+    }
+
     
 }
