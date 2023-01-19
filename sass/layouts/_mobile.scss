@@ -131,6 +131,10 @@
     &:focus {
         color: vars.$logo-color;
     }
+
+    @media screen and (min-width:320px) and (max-width:479px) {
+        font-size: 24px;
+    }
 }
 
 .contact__item--current {
@@ -149,7 +153,11 @@
     &:hover,
     &:focus {
         color: vars.$logo-color;
-}
+    }
+
+    @media screen and (min-width:320px) and (max-width:479px) {
+        font-size: 14px;
+    }
 }
 
 .mobile__footer {
@@ -158,8 +166,11 @@
 }
 
 .mobile__footer--items {
-    margin-left: 10px;
     
+    &:not(:first-child) {
+    margin-left: 10px;
+    }
+
     &:not(:last-child){
         border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
@@ -175,8 +186,9 @@
     color: vars.$logo-color;
     margin-right: 10px;
 
+
     @media screen and (min-width:320px) and (max-width: 479px) {
-        font-size: 14px;
+        font-size: 12px;
         
     }
 
