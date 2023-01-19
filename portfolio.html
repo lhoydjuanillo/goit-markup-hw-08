@@ -46,8 +46,61 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="mobile__btn--open js-open-menu">
+                <svg class="menu__icon" width="24" height="16">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
+
+    <div class="menu__container js-menu-container">
+        <button type="button" class="mobile__btn--close js-close-menu">
+            <svg class="menu__icon" width="18" height="18">
+                <use href="./images/sprite.svg#icon-Vector"></use>
+            </svg>
+        </button>
+
+        <div class="mobile__nav">
+            <ul class="mobile__menu">
+                <li class="mobile__menu--item">
+                    <a href= "./index.html" class="mobile__link--current mobile__menu--link">Studio</a>
+                </li>
+                <li class="mobile__menu--item">
+                    <a href= "./portfolio.html" class="mobile__menu--link">Portfolio</a>
+                </li>
+                <li class="mobile__menu--item">
+                    <a href= "./index.html" class="mobile__menu--link">Contacts</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="mobile__contact">
+            <li class="mobile__contact--item">
+                <a class="contact__item--num contact__item--current" href="tel:+380961111111">
+                    +38 096 111 11 11</a>
+            </li>
+            <li class="mobile__contact--item">
+                <a class="contact__item--mail" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="mobile__footer">
+            <li class="mobile__footer--items">
+                <a href="Instagram.com" class="mobile__items--icon">Instagram </a>
+            </li>
+            <li class="mobile__footer--items">
+                <a href="Twitter.com" class="mobile__items--icon">Twitter</a>
+            </li>
+            <li class="mobile__footer--items">
+                <a href="Facebook.com" class="mobile__items--icon">Facebook</a>
+            </li>
+            <li class="mobile__footer--items">
+                <a href="LinkedIn.com" class="mobile__items--icon">LinkedIn</a>
+            </li>
+        </ul>    
+</div>
 
     <main>
         <section>
@@ -73,7 +126,21 @@
         <ul class="portfolio__image--list">
             <li class="portfolio__image--item">
                 <div class="portfolio__image"> 
-                    <img src="./images/portfolio-laptop-screen.jpg" alt="laptop with three people" width="370" height="294">
+                    
+                    <picture>
+
+                        <source srcset="./images/portfolio/laptopscreen-1x.jpg 1x, ./images/portfolio/laptopscreen-2x.jpg 2x"
+                            media="(min-width: 1200px)" width="370" height="294"/>
+                        <source srcset="./images/portfolio/laptopscreen-tab-1x.jpg 1x, ./images/portfolio/laptopscreen-tab-2x.jpg 2x"
+                            media="(min-width: 768px)" width="354" height="294"/>
+                        <source srcset="./images/portfolio/laptopscreen-mob-1x.jpg 1x, ./images/portfolio/laptopscreen-mob-2x.jpg 2x"
+                            media="(min-width: 320px)" width="450" height="294"/>
+
+                        <img class="portfolio-list__image" src="./images/portfolio/laptopscreen-1x.jpg" alt="laptop with three people"
+                            width="370" height="294"/>
+
+                    </picture>
+
                     <div class="portfolio__overlay"> 
                         <p class="overlay__text"> 
                             Technoduck is a state-of-the-art
@@ -91,7 +158,21 @@
             </li>             
             <li class="portfolio__image--item">
                 <div class="portfolio__image">
-                    <img src="./images/portfolio-curry.jpg" alt="nba player blocked" width="370" height="294">
+                    
+                    <picture>
+
+                        <source srcset="./images/portfolio/curry-1x.jpg 1x, ./images/portfolio/curry-2x.jpg 2x"
+                            media="(min-width: 1200px)" width="370" height="294"/>
+                        <source srcset="./images/portfolio/curry-tab-1x.jpg 1x, ./images/portfolio/curry-tab-2x.jpg 2x"
+                            media="(min-width: 768px)" width="354" height="294"/>
+                        <source srcset="./images/portfolio/curry-mob-1x.jpg 1x, ./images/portfolio/curry-mob-2x.jpg 2x"
+                            media="(min-width: 320px)" width="450" height="294"/>
+
+                        <img class="portfolio-list__image" src="./images/portfolio/curry-1x.jpg" alt="nba player blocked"
+                            width="370" height="294"/>
+
+                    </picture>
+
                     <div class="portfolio__overlay"> 
                         <p class="overlay__text"> 
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -109,7 +190,21 @@
             </li>                
             <li class="portfolio__image--item">
                 <div class="portfolio__image">
-                <img src="./images/portfolio-seafood.jpg" alt="the Seafood Restaurant Logo" width="370" height="294">
+                
+                <picture>
+
+                    <source srcset="./images/portfolio/seafood-1x.jpg 1x, ./images/portfolio/seafood-2x.jpg 2x"
+                        media="(min-width: 1200px)" width="370" height="294"/>
+                    <source srcset="./images/portfolio/seafood-tab-1x.jpg 1x, ./images/portfolio/seafood-tab-2x.jpg 2x"
+                        media="(min-width: 768px)" width="354" height="294"/>
+                    <source srcset="./images/portfolio/seafood-mob-1x.jpg 1x, ./images/portfolio/seafood-mob-2x.jpg 2x"
+                        media="(min-width: 320px)" width="450" height="294"/>
+
+                    <img class="portfolio-list__image" src="./images/portfolio/seafood-1x.jpg" alt="the Seafood Restaurant Logo"
+                        width="370" height="294"/>
+
+                </picture>
+
                 <div class="portfolio__overlay"> 
                         <p class="overlay__text"> 
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -128,7 +223,20 @@
             </li>               
             <li class="portfolio__image--item">
                 <div class="portfolio__image">
-                <img src="./images/portfolio-headset.jpg" alt="headset" width="370" height="294">
+                
+                <picture>
+
+                    <source srcset="./images/portfolio/headset-1x.jpg 1x, ./images/portfolio/headset-2x.jpg 2x"
+                        media="(min-width: 1200px)" width="370" height="294"/>
+                    <source srcset="./images/portfolio/headset-tab-1x.jpg 1x, ./images/portfolio/headset-tab-2x.jpg 2x"
+                        media="(min-width: 768px)" width="354" height="294"/>
+                    <source srcset="./images/portfolio/headset-mob-1x.jpg 1x, ./images/portfolio/headset-mob-2x.jpg 2x"
+                        media="(min-width: 320px)" width="450" height="294"/>
+
+                    <img class="portfolio-list__image" src="./images/portfolio/headset-1x.jpg" alt="headset"
+                        width="370" height="294"/>
+
+                </picture>
                 <div class="portfolio__overlay"> 
                         <p class="overlay__text"> 
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -147,7 +255,21 @@
             </li>
             <li class="portfolio__image--item">
                 <div class="portfolio__image">
-                <img src="./images/portfolio-boxes.jpg" alt="two boxes" width="370" height="294">
+                
+                <picture>
+
+                    <source srcset="./images/portfolio/projectbox-1x.jpg 1x, ./images/portfolio/projectbox-2x.jpg 2x"
+                        media="(min-width: 1200px)" width="370" height="294"/>
+                    <source srcset="./images/portfolio/projectbox-tab-1x.jpg 1x, ./images/portfolio/projectbox-tab-2x.jpg 2x"
+                        media="(min-width: 768px)" width="354" height="294"/>
+                    <source srcset="./images/portfolio/projectbox-mob-1x.jpg 1x, ./images/portfolio/projectbox-mob-2x.jpg 2x"
+                        media="(min-width: 320px)" width="450" height="294"/>
+
+                    <img class="portfolio-list__image" src="./images/portfolio/projectbox-1x.jpg" alt="two boxes"
+                        width="370" height="294"/>
+
+                </picture>
+
                 <div class="portfolio__overlay"> 
                         <p class="overlay__text"> 
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -166,11 +288,25 @@
             </li>
             <li class="portfolio__image--item">
                 <div class="portfolio__image">
-                <img src="./images/portfolio-monitor.jpg" alt="laptop monitor" width="370" height="294">
+                
+                <picture>
+
+                    <source srcset="./images/portfolio/monitor-1x.jpg 1x, ./images/portfolio/monitor-2x.jpg 2x"
+                        media="(min-width: 1200px)" width="370" height="294"/>
+                    <source srcset="./images/portfolio/monitor-tab-1x.jpg 1x, ./images/portfolio/monitor-tab-2x.jpg 2x"
+                        media="(min-width: 768px)" width="354" height="294"/>
+                    <source srcset="./images/portfolio/monitor-mob-1x.jpg 1x, ./images/portfolio/monitor-mob-2x.jpg 2x"
+                        media="(min-width: 320px)" width="450" height="294"/>
+
+                    <img class="portfolio-list__image" src="./images/portfolio/monitor-1x.jpg" alt="laptop monitor"
+                        width="370" height="294"/>
+
+                </picture>
+
                 <div class="portfolio__overlay"> 
                         <p class="overlay__text"> 
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Rerum saepe, esse aliquam sit, quis alias nostrum quae 
+                            Rerum saep, quis alias nostrum quae 
                             laudantium dolorem ratione blanditiis dolor explicabo, 
                             doloribus cum?
                     
@@ -185,12 +321,26 @@
             </li>
             <li class="portfolio__image--item">
                 <div class="portfolio__image">
-                <img src="./images/portfolio-book.jpg" alt="limited edition book" width="370" height="294">
+                
+                <picture>
+
+                    <source srcset="./images/portfolio/book-1x.jpg 1x, ./images/portfolio/book-2x.jpg 2x"
+                        media="(min-width: 1200px)" width="370" height="294"/>
+                    <source srcset="./images/portfolio/book-tab-1x.jpg 1x, ./images/portfolio/book-tab-2x.jpg 2x"
+                        media="(min-width: 768px)" width="354" height="294"/>
+                    <source srcset="./images/portfolio/book-mob-1x.jpg 1x, ./images/portfolio/book-mob-2x.jpg 2x"
+                        media="(min-width: 320px)" width="450" height="294"/>
+
+                    <img class="portfolio-list__image" src="./images/portfolio/book-1x.jpg" alt="limited edition book"
+                        width="370" height="294"/>
+
+                </picture>
+
                 <div class="portfolio__overlay"> 
                         <p class="overlay__text"> 
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Rerum saepe, esse aliquam sit, quis alias nostrum quae 
-                            laudantium dolorem ratione blanditiis dolor explicabo, 
+                            laudantium dolorem ratione, 
                             doloribus cum?
                     
                         </p> 
@@ -204,7 +354,21 @@
             </li>
             <li class="portfolio__image--item">
                 <div class="portfolio__image">
-                <img src="./images/portfolio-tag.jpg" alt="label tag" width="370" height="294">
+                
+                <picture>
+
+                    <source srcset="./images/portfolio/tag-1x.jpg 1x, ./images/portfolio/tag-2x.jpg 2x"
+                        media="(min-width: 1200px)" width="370" height="294"/>
+                    <source srcset="./images/portfolio/tag-tab-1x.jpg 1x, ./images/portfolio/tag-tab-2x.jpg 2x"
+                        media="(min-width: 768px)" width="354" height="294"/>
+                    <source srcset="./images/portfolio/tag-mob-1x.jpg 1x, ./images/portfolio/tag-mob-2x.jpg 2x"
+                        media="(min-width: 320px)" width="450" height="294"/>
+
+                    <img class="portfolio-list__image" src="./images/portfolio/tag-1x.jpg" alt="label tag"
+                        width="370" height="294"/>
+
+                </picture>
+
                 <div class="portfolio__overlay"> 
                         <p class="overlay__text"> 
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -222,7 +386,21 @@
             </li>
             <li class="portfolio__image--item">
                 <div class="portfolio__image">
-                <img src="./images/portfolio-laptop.jpg" alt="typing at laptop" width="370" height="294">
+                
+                <picture>
+
+                    <source srcset="./images/portfolio/typing-1x.jpg 1x, ./images/portfolio/typing-2x.jpg 2x"
+                        media="(min-width: 1200px)" width="370" height="294"/>
+                    <source srcset="./images/portfolio/typing-tab-1x.jpg 1x, ./images/portfolio/typing-tab-2x.jpg 2x"
+                        media="(min-width: 768px)" width="354" height="294"/>
+                    <source srcset="./images/portfolio/typing-mob-1x.jpg 1x, ./images/portfolio/typing-mob-2x.jpg 2x"
+                        media="(min-width: 320px)" width="450" height="294"/>
+
+                    <img class="portfolio-list__image" src="./images/portfolio/typing-1x.jpg" alt="typing at laptop"
+                        width="370" height="294"/>
+
+                </picture>
+
                 <div class="portfolio__overlay"> 
                         <p class="overlay__text"> 
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -314,5 +492,8 @@
         </div>
     </footer>
     
+    <!-- JAVASCRIPT -->
+    <script src="./js/mobile-menu.js"></script>
+
 </body>
 </html>

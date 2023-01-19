@@ -5,12 +5,13 @@
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: 20px;
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        margin-top: 30px;        
+    }
 }
 
 .portfolio__image--item {
-    margin-left: 30px;
-    margin-top: 30px;
-    width: 370px;
     cursor: pointer;
     transition: box-shadow vars.$time vars.$time-function;
 
@@ -20,7 +21,29 @@
         0px 4px 4px rgba(0, 0, 0, 0.06), 
         1px 4px 6px rgba(0, 0, 0, 0.16);    
     }
+
+    @media screen and (min-width:320px) and (max-width:767px ) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        
+    }
+
+    @media screen and (min-width: 768px) and  (max-width: 1199px) {
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+        
 }
+
 
 .portfolio__image {
     position: relative;
@@ -47,11 +70,17 @@
     color: vars.$white-font-color;
     transform: translateY(100%);
     transition: vars.$time vars.$time-function;
+
 }
 
 .portfolio__image--item:hover .overlay__text,
 .portfolio__image--item:focus .overlay__text {
     transform: translateY(0);
+
+    @media screen and (min-width: 320px) and (max-width: 374px) {
+        font-size: 15px;
+        padding-top: 15px;
+    }
 }
 
 .portfolio__titles {
@@ -69,6 +98,12 @@
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     padding: 20px 24px;
+
+    @media screen and (min-width: 768px) and  (max-width: 1199px) {
+        width: 354px;
+       height: 135px;
+    }
+
 }
 
 .portfolio__titles--about {
@@ -79,4 +114,11 @@
     line-height: calc(30/16);
     letter-spacing: 0.03em;
     color: vars.$gray-font-color;
+}
+
+.portfolio-list__image {
+    background-image: url('/images/portfolio/laptopscreen-1x.jpg') ;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }

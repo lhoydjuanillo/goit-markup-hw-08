@@ -231,17 +231,7 @@ img {
   height: auto;
 }
 
-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-@media screen and (min-width: 480px) {
-  section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1278,9 +1268,21 @@ section {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio__list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
 
 .portfolio__items:not(:last-child) {
   margin-right: 8px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio__items:not(:last-child):not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio__buttons {
@@ -1318,16 +1320,37 @@ section {
   margin-left: -30px;
   margin-top: 20px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__image--list {
+    margin-top: 30px;
+  }
+}
 
 .portfolio__image--item {
-  margin-left: 30px;
-  margin-top: 30px;
-  width: 370px;
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__image--item:hover, .portfolio__image--item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio__image--item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__image--item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .portfolio__image--item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__image--item {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .portfolio__image {
@@ -1361,6 +1384,13 @@ section {
 .portfolio__image--item:focus .overlay__text {
   transform: translateY(0);
 }
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .portfolio__image--item:hover .overlay__text,
+.portfolio__image--item:focus .overlay__text {
+    font-size: 15px;
+    padding-top: 15px;
+  }
+}
 
 .portfolio__titles {
   font-family: "Roboto";
@@ -1378,6 +1408,12 @@ section {
   border-bottom: 1px solid #EEEEEE;
   padding: 20px 24px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__description {
+    width: 354px;
+    height: 135px;
+  }
+}
 
 .portfolio__titles--about {
   font-family: "Roboto";
@@ -1387,6 +1423,13 @@ section {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.portfolio-list__image {
+  background-image: url("/images/portfolio/laptopscreen-1x.jpg");
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .menu__container {

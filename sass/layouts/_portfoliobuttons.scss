@@ -14,10 +14,22 @@
 .portfolio__list {
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
 
 .portfolio__items:not(:last-child) {
     margin-right: 8px;   
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
 }
 
 .portfolio__buttons {
