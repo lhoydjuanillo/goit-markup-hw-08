@@ -1384,7 +1384,7 @@ img {
 .portfolio__image--item:focus .overlay__text {
   transform: translateY(0);
 }
-@media screen and (min-width: 320px) and (max-width: 374px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .portfolio__image--item:hover .overlay__text,
 .portfolio__image--item:focus .overlay__text {
     font-size: 15px;
