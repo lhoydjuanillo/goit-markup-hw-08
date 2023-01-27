@@ -22,12 +22,19 @@
     }
 }
 
-.portfolio__items:not(:last-child) {
-    margin-right: 8px;   
+.portfolio__items {
+       margin-bottom: 15px;
+       margin-right: 8px;
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
         &:not(:last-child) {
             margin-bottom: 15px;
+        }
+    }
+
+    @media screen and (max-width:1200px){
+        &:not(:last-child){
+            margin-right: 8px;
         }
     }
 }
